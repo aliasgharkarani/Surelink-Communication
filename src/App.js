@@ -25,7 +25,7 @@ class App extends Component {
       { pic: Secure, heading: "Secure and Reliable", para: "Our cloud based ERP software solutions have covered from system security to compliance. Your data is hosted on world-class servers with global teams dedicated to its safety." }
     ]
     return (
-      <div>
+      <div style={{overflow:"hidden"}}>
         <Row style={{ marginRight: '0px' }}>
           <Navbar style={{ marginRight: '0px', height: "65px" }}>
             <Col md={4} xs={12} sm={12}>
@@ -35,16 +35,16 @@ class App extends Component {
             </Col>
             <Col md={8} sm={12} xs={12} >
               <Nav>
-                <NavItem eventKey={1} href="#" sm={10} xs={10} >
+                <NavItem eventKey={1} href="#" sm={12} xs={12} >
                   Home
                 </NavItem>
-                <NavItem eventKey={2} href="#" sm={10} xs={10}>
+                <NavItem eventKey={2} href="#" sm={12} xs={12}>
                   About
              </NavItem>
-                <NavItem eventKey={3} href="#" sm={10} xs={10}>
+                <NavItem eventKey={3} href="#" sm={12} xs={12}>
                   Products
              </NavItem>
-                <NavItem eventKey={4} href="#" sm={10} xs={10}>
+                <NavItem eventKey={4} href="#" sm={12} xs={12}>
                   Contact
              </NavItem>
                 <NavDropdown eventKey={3} title="Pricing" id="basic-nav-dropdown">
@@ -58,46 +58,37 @@ class App extends Component {
             </Col>
           </Navbar>
         </Row>
-
-        {/* <div style={{background:"red"}}>
-          <Col md={4}><img src={logo1} style={{ height: "69px", width: "228px" }} /></Col>
-          <Col md={8}>
-            <Col md={2} eventKey={1}>Home</Col>
-            <Col md={2} eventKey={2}>About</Col>
-            <Col md={2} eventKey={3}>Products</Col>
-            <Col md={2} eventKey={4}>Contact</Col>
-          </Col>
-        </div> */}
-
-
-        <Carousel>
-          <Carousel.Item>
-            <img width={500} height={500} alt="900x500" src={pic} />
-            <Carousel.Caption>
-              <h3>Package 1</h3>
-              <p>it contains .................</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img width={500} height={500} alt="900x500" src={pic} />
-            <Carousel.Caption>
-              <h3>Package 2</h3>
-              <p>it contains .................</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img width={500} height={500} alt="900x500" src={pic} />
-            <Carousel.Caption>
-              <h3>Package 3</h3>
-              <p>it contains .................</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
-
-
-        {/* <div style={{ marginTop: "2%" }}> */}
         <Row>
-          <Col md={3} xs={11} sm={12}>
+          {/* <Col md={0} sm={1} xs={1}/> */}
+          <Col md={12} sm={12} xs={12}>
+            <Carousel>
+              <Carousel.Item>
+                <img width={500} height={500} alt="900x500" src={pic} />
+                <Carousel.Caption>
+                  <h3>Package 1</h3>
+                  <p>it contains .................</p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img width={500} height={500} alt="900x500" src={pic} />
+                <Carousel.Caption>
+                  <h3>Package 2</h3>
+                  <p>it contains .................</p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img width={500} height={500} alt="900x500" src={pic} />
+                <Carousel.Caption>
+                  <h3>Package 3</h3>
+                  <p>it contains .................</p>
+                </Carousel.Caption>
+              </Carousel.Item>
+            </Carousel>
+          </Col>
+        </Row>
+
+        <Row style={{marginTop:"3%"}}>
+          <Col md={3} xs={12} sm={12}>
             <Panel>
               <Panel.Heading>
                 <Panel.Title componentClass="h3">20 years of Experience</Panel.Title>
@@ -105,7 +96,7 @@ class App extends Component {
               <Panel.Body>Panel content</Panel.Body>
             </Panel>
           </Col>
-          <Col md={4} xs={11} sm={12}>
+          <Col md={4} xs={12} sm={12}>
             <Panel>
               <Panel.Heading>
                 <Panel.Title componentClass="h3">200+ Clients</Panel.Title>
@@ -113,7 +104,7 @@ class App extends Component {
               <Panel.Body>Panel content</Panel.Body>
             </Panel>
           </Col>
-          <Col md={3} xs={11} sm={12}>
+          <Col md={3} xs={12} sm={12}>
             <Panel>
               <Panel.Heading>
                 <Panel.Title componentClass="h3">1000+ Users</Panel.Title>
@@ -121,10 +112,9 @@ class App extends Component {
               <Panel.Body>Panel content</Panel.Body>
             </Panel>
           </Col>
-          </Row>
-        {/* </div> */}
+        </Row>
         <div>
-          <Col md={12} style={{ display: "flex", justifyContent: "center" }}><h3 style={{ borderBottom: "3px solid red" }}>Why Surelink?</h3></Col>
+          <Col md={11} style={{ display: "flex", justifyContent: "center" }}><h3 style={{ borderBottom: "3px solid red" }}>Why Surelink?</h3></Col>
           {whySurelink.map((obj, i) => {
             return (
               <Col md={4} style={{ display: "flex", alignItems: 'center', flexDirection: 'column', marginTop: "2%" }}>
@@ -136,20 +126,22 @@ class App extends Component {
           })}
         </div>
         <div>
-          <Col md={1} />
-          <Col md={5} style={{ marginTop: "1%" }}>
-            <iframe style={{ width: "500px", height: "300px" }} src="https://www.youtube.com/embed/xV_Bc5a8u60" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </Col>
-          <Col md={6} style={{ marginTop: "1%" }}>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <h4 style={{ textAlign: 'center', marginTop: '6%', borderBottom: "1px solid red" }}>
-                We change the way you think about ERP!
+          <Row>
+            <Col md={1} sm={1} xs={1} />
+            <Col md={5} sm={11} xs={11} style={{ marginTop: "1%" }}>
+              <iframe style={{ width: "300px", height: "200px" }} src="https://www.youtube.com/embed/xV_Bc5a8u60" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </Col>
+            <Col md={6} sm={11} xs={11} style={{ marginTop: "1%" }}>
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <h4 style={{ textAlign: 'center', marginTop: '6%', borderBottom: "1px solid red", fontSize: "12px" }}>
+                  We change the way you think about ERP!
              </h4>
-              <h4 style={{ textAlign: 'center', marginTop: '2%' }}>
-                See how our Tech Cloud ERP software uses intelligent technologies like digital assistants, AI and machine learning, and predictive analytics – to deliver instant, future proof value.
+                <h4 style={{ textAlign: 'center', marginTop: '2%', fontSize: "12px" }}>
+                  See how our Tech Cloud ERP software uses intelligent technologies like digital assistants, AI and machine learning, and predictive analytics – to deliver instant, future proof value.
             </h4>
-            </div>
-          </Col>
+              </div>
+            </Col>
+          </Row>
         </div>
       </div>
     );
