@@ -9,8 +9,17 @@ import Sequrity from './security.png';
 import Smart from './smart.png';
 import Secure from './secure.png';
 import Fast from './fast.png';
+import Sales from './sales.jpg';
+import Inventory from './inventory.jpg';
+import Purchase from './purchse.jpg';
+import Plant from './plant.jpg';
+import Quality from './quality.jpg';
+import Production from './production.jpg';
+import Assets from './asset-management.jpg';
+import Finance from './finance.jpg';
+import HumanResourse from './hrms.jpg';
 
-import { Carousel, Row, Col, Nav, NavDropdown, Navbar, NavItem, MenuItem, Panel, Dropdown } from 'react-bootstrap'
+import { Carousel, Row, Col, Nav, NavDropdown, Navbar, NavItem, MenuItem, Panel} from 'react-bootstrap'
 import './App.css';
 
 class App extends Component {
@@ -24,8 +33,19 @@ class App extends Component {
       { pic: Fast, heading: "Fast and Affordable", para: "Tap into Tech Cloud ERP world class cloud infrastructure to run lean and flexible business processes. Get up and running quickly anywhere in the world for a low monthly & yearly cost." },
       { pic: Secure, heading: "Secure and Reliable", para: "Our cloud based ERP software solutions have covered from system security to compliance. Your data is hosted on world-class servers with global teams dedicated to its safety." }
     ]
+    const ImportantModules = [
+      { pic: Sales, heading: "Sales & Marketing", para: "Whether you have 2 or 2000 employees, Tech Cloud ERP has a comprehensive portfolio of leading cloud based ERP software solutions and tools to fit your needs. We also provide dedicated support teams that are at your disposal 24/7" },
+      { pic: Inventory, heading: "Inventory Management", para: "Whether you have 2 or 2000 employees, Tech Cloud ERP has a comprehensive portfolio of leading cloud based ERP software solutions and tools to fit your needs. We also provide dedicated support teams that are at your disposal 24/7" },
+      { pic: Purchase, heading: "Purchase Management", para: "Whether you have 2 or 2000 employees, Tech Cloud ERP has a comprehensive portfolio of leading cloud based ERP software solutions and tools to fit your needs. We also provide dedicated support teams that are at your disposal 24/7" },
+      { pic: Plant, heading: "Plant Maintanance", para: "Leverage intelligent ERP with built-in machine learning, predictive analytics, and optimized processes. Keep the latest innovations at your fingertips with automatic updates" },
+      { pic: Quality, heading: "Quality Control", para: "Tap into Tech Cloud ERP world class cloud infrastructure to run lean and flexible business processes. Get up and running quickly anywhere in the world for a low monthly & yearly cost." },
+      { pic: Production, heading: "Production Management", para: "Our cloud based ERP software solutions have covered from system security to compliance. Your data is hosted on world-class servers with global teams dedicated to its safety." },
+      { pic: Assets, heading: "Assets Management", para: "Whether you have 2 or 2000 employees, Tech Cloud ERP has a comprehensive portfolio of leading cloud based ERP software solutions and tools to fit your needs. We also provide dedicated support teams that are at your disposal 24/7" },
+      { pic: Finance, heading: "Fianance", para: "Leverage intelligent ERP with built-in machine learning, predictive analytics, and optimized processes. Keep the latest innovations at your fingertips with automatic updates" },
+      { pic: HumanResourse, heading: "Human Resourse", para: "Whether you have 2 or 2000 employees, Tech Cloud ERP has a comprehensive portfolio of leading cloud based ERP software solutions and tools to fit your needs. We also provide dedicated support teams that are at your disposal 24/7" }
+    ]
     return (
-      <div style={{overflow:"hidden"}}>
+      <div style={{ overflow: "hidden" }}>
         <Row style={{ marginRight: '0px' }}>
           <Navbar style={{ marginRight: '0px', height: "65px" }}>
             <Col md={4} xs={12} sm={12}>
@@ -87,8 +107,9 @@ class App extends Component {
           </Col>
         </Row>
 
-        <Row style={{marginTop:"3%"}}>
-          <Col md={3} xs={12} sm={12}>
+        <Row style={{ marginTop: "3%" }}>
+        <Col md={1} xs={0} sm={0}/>
+          <Col md={3} xs={11} sm={11}>
             <Panel>
               <Panel.Heading>
                 <Panel.Title componentClass="h3">20 years of Experience</Panel.Title>
@@ -96,7 +117,7 @@ class App extends Component {
               <Panel.Body>Panel content</Panel.Body>
             </Panel>
           </Col>
-          <Col md={4} xs={12} sm={12}>
+          <Col md={4} xs={11} sm={11}>
             <Panel>
               <Panel.Heading>
                 <Panel.Title componentClass="h3">200+ Clients</Panel.Title>
@@ -104,7 +125,7 @@ class App extends Component {
               <Panel.Body>Panel content</Panel.Body>
             </Panel>
           </Col>
-          <Col md={3} xs={12} sm={12}>
+          <Col md={3} xs={11} sm={11}>
             <Panel>
               <Panel.Heading>
                 <Panel.Title componentClass="h3">1000+ Users</Panel.Title>
@@ -143,6 +164,66 @@ class App extends Component {
             </Col>
           </Row>
         </div>
+        <div>
+          <Col md={11} style={{ display: "flex", justifyContent: "center" }}><h3 style={{ borderBottom: "3px solid red" }}>Important Modules</h3></Col>
+          {ImportantModules.map((obj, i) => {
+            return (
+              <Col md={4} style={{ display: "flex", alignItems: 'center', flexDirection: 'column', marginTop: "2%" }}>
+                <img src={obj.pic} height={200} width={200} />
+                <h4>{obj.heading}</h4>
+                <p style={{ fontSize: '13px', textAlign: 'center' }}>{obj.para}</p>
+              </Col>
+            )
+          })}
+          <Col md={12} style={{ display: "flex", justifyContent: "center" }}><h3 style={{ borderBottom: "3px solid red" }}>Other Modules</h3></Col>
+          <Col md={12} style={{ display: "flex", justifyContent: "center" }}><h5>Job work, Dynamic Costing,..........................................................................</h5></Col>
+        </div>
+        <Col md={12} style={{ background: "#37addb", borderBottom: "3px solid red" }}>
+          <Col md={12} style={{ display: "flex", justifyContent: "center" }}><h3 style={{ borderBottom: "3px solid red", color: "white" }}>Tech Cloud ERP Features</h3></Col>
+          <Col style={{ display: "flex", alignItems: 'center', color: "white", flexDirection: "column" }} md={6}>
+            <h4>Web Based and Cloud Computing</h4>
+            <h4>Dynamic Dash Board with a GUI</h4>
+            <h4>Inbuilt Email & SMS Integration</h4>
+            <h4>Multi Language</h4>
+            <h4>Unlimited Data Storage</h4>
+          </Col>
+          <Col style={{ display: "flex", alignItems: 'center', color: "white", flexDirection: "column" }} md={6}>
+            <h4>Mobile and Tab Compatibility</h4>
+            <h4>Unlimited Users</h4>
+            <h4>Auto Back-up Facility</h4>
+            <h4>Flexible Software</h4>
+            <h4>Lifetime Product, No Renewals</h4>
+          </Col>
+          <Col md={12} style={{ display: "flex", justifyContent: "center" }}><h4 style={{ color: "white" }}>+Other Awesome Features in Tech Cloud ERP</h4></Col>
+        </Col>
+
+        <Row>
+          <Col md={2} />
+          <Col md={8} style={{ background: "#37addb", borderBottom: "3px solid black", marginTop: "1%" }}>
+            <Col md={12} style={{ display: "flex", justifyContent: "center" }}><h3 style={{ color: "white" }}>Call us now</h3></Col>
+            <Col md={12} style={{ display: "flex", justifyContent: "center" }}><h3 style={{ color: "white" }}>+91-891-943-9603</h3></Col>
+          </Col>
+          <Col md={2} />
+        </Row>
+
+        <Row>
+          <Col md={2} />
+          <Col md={8} style={{ marginTop: "1%",paddingLeft:"0px" }}>
+            <Col md={12} style={{paddingLeft:"0px"}}>
+              <Col md={3} style={{paddingLeft:"0px"}}>
+                <img src={logo1} style={{ height: "69px", width: "228px" }} />
+              </Col>
+              <Col style={{ display: "flex", alignItems: 'center', flexDirection: "column",height:"69px",justifyContent:"center"}} md={6}>
+              <Col >©2018 Tech Cloud ERP. All Rights Reserved. Privacy Policy</Col>
+              <Col >Terms & Conditions.</Col>
+              </Col>
+              <Col md={3} style={{ display: "flex", alignItems: 'center',height:"69px",justifyContent:"center"}}>
+              Get Social
+              </Col>
+            </Col>
+          </Col>
+          <Col md={2} />
+        </Row>
       </div>
     );
   }
