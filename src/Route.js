@@ -5,6 +5,8 @@ import history from './History';
 import NotFound from './NotFound';
 import Home from './App';
 import About from './About';
+import Products from './Product'
+import ContactUs from './ContactUs'
 
 class Routers extends Component {
     constructor(props) {
@@ -22,6 +24,8 @@ class Routers extends Component {
                         <Route exact path="/" component={Home} />
                         <Route exact path="/Home" component={Home} />
                         <Route exact path="/about" component={About} />
+                        <Route exact path="/products" component={Products} />
+                        <Route exact path="/contactus" component={ContactUs} />
                         {/* <PrivateRoute authed={this.state.authed} path="/Main" component={Main} /> */}
                         <Route path="*" component={NotFound} />
                     </Switch>
