@@ -20,7 +20,7 @@ class App extends Component {
         ]
         return (
             <div style={{ overflowX: "hidden" }}>
-                <Row style={{ marginRight: '0px' }}>
+                {/* <Row style={{ marginRight: '0px' }}>
                     <Navbar style={{ marginRight: '0px', height: "65px" }}>
                         <Col md={4} xs={12} sm={12}>
                             <Navbar.Brand>
@@ -55,7 +55,22 @@ class App extends Component {
                             </Nav>
                         </Col>
                     </Navbar>
+                </Row> */}
+
+                <Row style={{ height: "60px" }}>
+                    <Col md={1} />
+                    <Col md={3}>
+                        <img src={logo1} style={{ height: "60px", width: "228px" }} />
+                    </Col>
+                    <Col md={8} style={{ height: "60px", display: "flex", justifyContent: "flex-end" }}>
+                        <Col md={2} style={{ alignSelf: 'center' }}>Home</Col>
+                        <Col md={2} style={{ alignSelf: 'center' }}>About</Col>
+                        <Col md={2} style={{ alignSelf: 'center' }}>Products</Col>
+                        <Col md={2} style={{ alignSelf: 'center' }}>Contact</Col>
+                        <Col md={2} style={{ alignSelf: 'center' }}>Pricing</Col>
+                    </Col>
                 </Row>
+
                 <Col md={12}>
                     <Col md={1} />
                     <Col md={11}>
