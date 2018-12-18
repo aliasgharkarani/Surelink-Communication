@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import logo1 from './logo1.jpg';
-import Sales from './sales.jpg';
-import Inventory from './inventory.jpg';
-import Purchase from './purchse.jpg';
-import Plant from './plant.jpg';
-import { Row, Col, Nav, NavDropdown, Navbar, NavItem, MenuItem } from 'react-bootstrap'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import './App.css';
+import Sales from '../../assets/sales.jpg';
+import Inventory from '../../assets/inventory.jpg';
+import Purchase from '../../assets/purchse.jpg';
+import Plant from '../../assets/plant.jpg';
+import { Row, Col} from 'react-bootstrap'
+// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Header from '../Custom_Components/Header.js'
+import Footer from '../Custom_Components/Footer.js'
 
 class App extends Component {
   render() {
@@ -19,43 +19,8 @@ class App extends Component {
     ]
     return (
       <div style={{ overflowX: "hidden" }}>
-        <Row style={{ marginRight: '0px' }}>
-          <Navbar style={{ marginRight: '0px', height: "65px" }}>
-            <Col md={4} xs={12} sm={12}>
-              <Navbar.Brand>
-                <img src={logo1} style={{ height: "69px", width: "228px" }} />
-              </Navbar.Brand>
-            </Col>
-            <Col md={8} sm={12} xs={12} >
-              <Nav>
-                <NavItem eventKey={1} href="#" sm={2} xs={6} >
-                  <Link to="/home">Home
-                </Link>
-                </NavItem>
-                <NavItem eventKey={2} href="#" sm={6} xs={6}>
-                  <Link to="/about">About
-                </Link>
-                </NavItem>
-                <NavItem eventKey={3} href="#" sm={6} xs={6}>
-                  <Link to="/products">Products
-                </Link>
-                </NavItem>
-                <NavItem eventKey={4} href="#" sm={6} xs={6}>
-                  <Link to="/contact">Contact
-                </Link>
-                </NavItem>
-                <NavDropdown eventKey={3} title="Pricing" id="basic-nav-dropdown">
-                  <MenuItem eventKey={3.1}>1</MenuItem>
-                  <MenuItem eventKey={3.2}>2</MenuItem>
-                  <MenuItem eventKey={3.3}>3</MenuItem>
-                  <MenuItem divider />
-                  <MenuItem eventKey={3.4}>Separated link</MenuItem>
-                </NavDropdown>
-              </Nav>
-            </Col>
-          </Navbar>
-        </Row>
-        <Col md={12}>
+        <Header />
+        <Col md={12} style={{ marginTop: "3%" }}>
           <Col md={1} />
           <Col style={{ display: "flex", flexDirection: "column", border: "4px solid #37addb" }} md={5}>
             <h3 style={{ fontWeight: "bold", marginTop: "20px" }}>About Us</h3>
@@ -100,7 +65,7 @@ class App extends Component {
         {ImportantModules.map((obj, i) => {
           return (
             <Col md={3} style={{ display: "flex", alignItems: 'center', flexDirection: 'column', marginTop: "3%" }}>
-              <img src={obj.pic} height={100} width={100} />
+              <img src={obj.pic} height={100} width={100} alt="collection"/>
               <h4>{obj.heading}</h4>
             </Col>
           )
@@ -145,46 +110,9 @@ class App extends Component {
             </Col>
           </Col>
         </Row>
-
-
-        <Row>
-          <Col md={1} />
-          <Col md={10} style={{ background: "#37addb", borderBottom: "5px solid black", marginTop: "1%", height: '145px' }}>
-            <Col md={12} style={{ display: "flex", justifyContent: "center" }}><h3 style={{ color: "white" }}>Call us now</h3></Col>
-            <Col md={12} style={{ display: "flex", justifyContent: "center" }}><h3 style={{ color: "white" }}>+91-891-943-9603</h3></Col>
-          </Col>
-          <Col md={1} />
-        </Row>
-
-        <Row>
-          <Col md={1} />
-          <Col md={10} style={{ marginTop: "1%", paddingLeft: "0px" }}>
-            <Col md={12} style={{ paddingLeft: "0px" }}>
-              <Col md={3} style={{ paddingLeft: "0px" }}>
-                <img src={logo1} style={{ height: "69px", width: "228px" }} />
-              </Col>
-              <Col style={{ display: "flex", alignItems: 'center', flexDirection: "column", height: "69px", justifyContent: "center" }} md={6}>
-                <Col style={{color:"#f69a83",textShadow:"0.2px 0.2px"}}>©2018 Tech Cloud ERP. All Rights Reserved. <span style={{color:"#1fb1ce",textShadow:"0.5px 0.5px"}}>Privacy Policy</span><br/><span style={{color:'#ef471d',textShadow:"0.5px 0.5px"}}>Terms & Conditions.</span></Col>
-              </Col>
-              <Col md={3} style={{ display: "flex", alignItems: 'center', height: "69px", justifyContent: "center" }}>
-                Get Social
-                <img src={Plant} style={{ height: "28px", width: "28px" }} />
-                <img src={Plant} style={{ height: "28px", width: "28px" }} />
-                <img src={Plant} style={{ height: "28px", width: "28px" }} />
-                <img src={Plant} style={{ height: "28px", width: "28px" }} />
-                <img src={Plant} style={{ height: "28px", width: "28px" }}/>
-                <img src={Plant} style={{ height: "28px", width: "28px" }}/>
-              </Col>
-            </Col>
-          </Col>
-          <Col md={1} />
-        </Row>
-
-
-
+        <Footer />
       </div>
     );
   }
 }
-// https://techclouderp.com/
 export default App;

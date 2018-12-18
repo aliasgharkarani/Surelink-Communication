@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import './App.css'
-import { Route, Switch, Router, Redirect } from 'react-router-dom';
-import history from './History';
-import NotFound from './NotFound';
-import Home from './App';
-import About from './About';
-import Products from './Product'
-import ContactUs from './ContactUs'
+import { Route, Switch, Router } from 'react-router-dom';
+import history from './Components/Custom_Components/History';
+import NotFound from './Components/Custom_Components/NotFound';
+import Home from './Components/Home_Component/Home';
+import About from './Components/About_Component/About';
+import Products from './Components/Products_Component/Product'
+import ContactUs from './Components/Contact_Component/ContactUs'
 
 class Routers extends Component {
     constructor(props) {

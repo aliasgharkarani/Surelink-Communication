@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import logo1 from './logo1.jpg';
-import Plant from './plant.jpg';
-import team from './team123.png';
-import { Row, Col, Nav, NavDropdown, Navbar, NavItem, MenuItem, FormGroup, FormControl, Button } from 'react-bootstrap'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import './App.css';
+import team from '../../assets/team123.png';
+import pak_flag from '../../assets/pak_flag.png'
+import { Row, Col,FormGroup, FormControl, Button } from 'react-bootstrap'
+// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import './ContactUs.css';
+import Header from '../Custom_Components/Header.js'
+import Footer from '../Custom_Components/Footer.js'
 
-class App extends Component {
+class ContactUs extends Component {
     constructor(props, context) {
         super(props, context);
 
@@ -22,14 +23,6 @@ class App extends Component {
         };
     }
 
-    //   getValidationState() {
-    //     const length = this.state.value.length;
-    //     if (length > 10) return 'success';
-    //     else if (length > 5) return 'warning';
-    //     else if (length > 0) return 'error';
-    //     return null;
-    //   }
-
     handleChange(e) {
         this.setState({ [e.target.name]: e.target.value });
     }
@@ -37,43 +30,7 @@ class App extends Component {
     render() {
         return (
             <div style={{ overflowX: "hidden" }}>
-                <Row style={{ marginRight: '0px' }}>
-                    <Navbar style={{ marginRight: '0px', height: "65px" }}>
-                        <Col md={4} xs={12} sm={12}>
-                            <Navbar.Brand>
-                                <img src={logo1} style={{ height: "69px", width: "228px" }} />
-                            </Navbar.Brand>
-                        </Col>
-                        <Col md={8} sm={12} xs={12} >
-                            <Nav>
-                                <NavItem eventKey={1} href="#" sm={2} xs={6} >
-                                    <Link to="/home">Home
-                </Link>
-                                </NavItem>
-                                <NavItem eventKey={2} href="#" sm={6} xs={6}>
-                                    <Link to="/about">About
-                </Link>
-                                </NavItem>
-                                <NavItem eventKey={3} href="#" sm={6} xs={6}>
-                                    <Link to="/products">Products
-                </Link>
-                                </NavItem>
-                                <NavItem eventKey={4} href="#" sm={6} xs={6}>
-                                    <Link to="/contactus">Contact
-                </Link>
-                                </NavItem>
-                                <NavDropdown eventKey={3} title="Pricing" id="basic-nav-dropdown">
-                                    <MenuItem eventKey={3.1}>1</MenuItem>
-                                    <MenuItem eventKey={3.2}>2</MenuItem>
-                                    <MenuItem eventKey={3.3}>3</MenuItem>
-                                    <MenuItem divider />
-                                    <MenuItem eventKey={3.4}>Separated link</MenuItem>
-                                </NavDropdown>
-                            </Nav>
-                        </Col>
-                    </Navbar>
-                </Row>
-
+                <Header />
                 <Row>
                     <Col md={2} />
                     <Col md={8} style={{ textAlign: "center" }}><h3>Interested in Tech Cloud Enterprise Resource Planning  Software System?</h3></Col>
@@ -85,7 +42,8 @@ class App extends Component {
                     <Col md={8} style={{ textAlign: "center" }}><h4>We would love to hear from you</h4></Col>
                     <Col md={2} />
                 </Row>
-
+                <br />
+                <br />
                 <Row>
                     <Col md={12} style={{ flexDirection: "column" }}>
                         <Col md={1} />
@@ -93,58 +51,62 @@ class App extends Component {
                             <form>
                                 <FormGroup
                                     controlId="formBasicText"
-                                // validationState={this.getValidationState()}
                                 >
                                     <FormControl
-                                        style={{ width: "80%",marginTop:"3%",height:"45px" }}
+                                        style={{ width: "80%", marginTop: "3%", height: "45px" }}
                                         type="text"
                                         name="name"
                                         value={this.state.name}
+                                        required
                                         placeholder="Name"
                                         onChange={this.handleChange}
                                     />
                                     <FormControl
-                                        style={{ width: "80%",marginTop:"3%",height:"45px" }}
+                                        style={{ width: "80%", marginTop: "3%", height: "45px" }}
                                         type="text"
                                         name="phonenumber"
                                         value={this.state.phonenumber}
+                                        required
                                         placeholder="phone number"
                                         onChange={this.handleChange}
                                     />
                                     <FormControl
-                                        style={{ width: "80%",marginTop:"3%",height:"45px" }}
+                                        style={{ width: "80%", marginTop: "3%", height: "45px" }}
                                         type="text"
                                         name="email"
                                         value={this.state.email}
+                                        required
                                         placeholder="email"
                                         onChange={this.handleChange}
                                     />
                                     <FormControl
-                                        style={{ width: "80%",marginTop:"3%",height:"45px" }}
+                                        style={{ width: "80%", marginTop: "3%", height: "45px" }}
                                         type="text"
                                         name="company"
                                         value={this.state.company}
+                                        required
                                         placeholder="company"
                                         onChange={this.handleChange}
                                     />
                                     <FormControl
                                         componentClass="textarea"
-                                        style={{ width: "80%",marginTop:"3%",height:"100px" }}
+                                        style={{ width: "80%", marginTop: "3%", height: "100px" }}
                                         type="text"
                                         name="message"
                                         value={this.state.message}
+                                        required
                                         placeholder="message"
                                         onChange={this.handleChange}
                                     />
-                                    <Button type="submit" style={{marginTop:"3%",width:"130px",height:"40px",color:"#ffff",fontWeight:"bold",background:"#01a2ca"}}>Send Message</Button>
+                                    <Button type="submit" style={{ marginTop: "3%", width: "130px", height: "40px", color: "#ffff", fontWeight: "bold", background: "#01a2ca" }}>Send Message</Button>
                                 </FormGroup>
                             </form>
                         </Col>
                         <Col md={5}>
                             <Row>
-                                <Col md={12} style={{marginTop:"2%"}}>
+                                <Col md={12} style={{ marginTop: "2%" }}>
                                     <Col md={3}>
-                                        <img src={team} style={{ background: "#fffff", height: "80px", width: "90px" }} />
+                                        <img src={team} alt="team" style={{ background: "#fffff", height: "80px", width: "90px" }} />
                                     </Col>
                                     <Col md={6}>
                                         <Col md={12} style={{ flexDirection: "column" }}>
@@ -157,9 +119,9 @@ class App extends Component {
                                 </Col>
                             </Row>
                             <Row>
-                                <Col md={12} style={{marginTop:"2%"}}>
+                                <Col md={12} style={{ marginTop: "2%" }}>
                                     <Col md={3}>
-                                        <img src={team} style={{ background: "#fffff", height: "80px", width: "90px" }} />
+                                        <img src={team} alt="team" style={{ background: "#fffff", height: "80px", width: "90px" }} />
                                     </Col>
                                     <Col md={6}>
                                         <Col md={12} style={{ flexDirection: "column" }}>
@@ -172,9 +134,9 @@ class App extends Component {
                                 </Col>
                             </Row>
                             <Row>
-                                <Col md={12} style={{marginTop:"2%"}}>
+                                <Col md={12} style={{ marginTop: "2%" }}>
                                     <Col md={3}>
-                                        <img src={team} style={{ background: "#fffff", height: "80px", width: "90px" }} />
+                                        <img src={team} alt="team" style={{ background: "#fffff", height: "80px", width: "90px" }} />
                                     </Col>
                                     <Col md={6}>
                                         <Col md={12} style={{ flexDirection: "column" }}>
@@ -187,9 +149,9 @@ class App extends Component {
                                 </Col>
                             </Row>
                             <Row>
-                                <Col md={12} style={{marginTop:"2%"}}>
+                                <Col md={12} style={{ marginTop: "2%" }}>
                                     <Col md={3}>
-                                        <img src={team} style={{ background: "#fffff", height: "80px", width: "90px" }} />
+                                        <img src={team} alt="team" style={{ background: "#fffff", height: "80px", width: "90px" }} />
                                     </Col>
                                     <Col md={6}>
                                         <Col md={12} style={{ flexDirection: "column" }}>
@@ -205,6 +167,33 @@ class App extends Component {
                         <Col md={1} />
                     </Col>
                 </Row>
+
+
+                <Row>
+                    <Col md={1} />
+                    <Col md={6}>
+
+                        <div class="mapouter">
+                            <div class="gmap_canvas">
+                                <iframe style={{ width: "615px", height: "339px" }} title="Office_location_map" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.688214481618!2d67.08159641447854!3d24.90861454946135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f027e8efea3%3A0x910e5e870c6ed89d!2sSurelink+Communication!5e0!3m2!1sen!2s!4v1545134087853" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                <a href="https://www.crocothemes.net">wordpress themes by crocothemes.net</a></div></div>
+                    </Col>
+                    <Col md={4} style={{ alignItems: 'center', justifyContent: 'center', display: 'flex', height: "331px" }}>
+                        <Col md={4}>
+                            <img src={pak_flag} alt="Pak-Flag" style={{ width: "100px", height: "100px", border: "1px solid grey" }} />
+                        </Col>
+                        <Col md={6}>
+                            <h3 style={{ marginTop: "0px" }}>Corporate Office</h3>
+                            <p>Surelink Communication
+                               Plot No. A-20 Mehmoob Square, Block-14,
+                               FB.Area, Karachi.
+                               Phone - +92-335-5100234
+                               Email - info@surelinkpk.com</p>
+                        </Col>
+                    </Col>
+                    <Col md={1} />
+                </Row>
+
 
                 <Row>
                     <Col md={12} style={{ borderBottom: "3px solid red", marginTop: "3%" }}></Col>
@@ -246,45 +235,9 @@ class App extends Component {
                         </Col>
                     </Col>
                 </Row>
-
-                <Row>
-                    <Col md={1} />
-                    <Col md={10} style={{ background: "#37addb", borderBottom: "5px solid black", marginTop: "1%", height: '145px' }}>
-                        <Col md={12} style={{ display: "flex", justifyContent: "center" }}><h3 style={{ color: "white" }}>Call us now</h3></Col>
-                        <Col md={12} style={{ display: "flex", justifyContent: "center" }}><h3 style={{ color: "white" }}>+91-891-943-9603</h3></Col>
-                    </Col>
-                    <Col md={1} />
-                </Row>
-
-                <Row>
-                    <Col md={1} />
-                    <Col md={10} style={{ marginTop: "1%", paddingLeft: "0px" }}>
-                        <Col md={12} style={{ paddingLeft: "0px" }}>
-                            <Col md={3} style={{ paddingLeft: "0px" }}>
-                                <img src={logo1} style={{ height: "69px", width: "228px" }} />
-                            </Col>
-                            <Col style={{ display: "flex", alignItems: 'center', flexDirection: "column", height: "69px", justifyContent: "center" }} md={6}>
-                                <Col style={{ color: "#f69a83", textShadow: "0.2px 0.2px" }}>©2018 Tech Cloud ERP. All Rights Reserved. <span style={{ color: "#1fb1ce", textShadow: "0.5px 0.5px" }}>Privacy Policy</span><br /><span style={{ color: '#ef471d', textShadow: "0.5px 0.5px" }}>Terms & Conditions.</span></Col>
-                            </Col>
-                            <Col md={3} style={{ display: "flex", alignItems: 'center', height: "69px", justifyContent: "center" }}>
-                                Get Social
-                                <img src={Plant} style={{ height: "28px", width: "28px" }} />
-                                <img src={Plant} style={{ height: "28px", width: "28px" }} />
-                                <img src={Plant} style={{ height: "28px", width: "28px" }} />
-                                <img src={Plant} style={{ height: "28px", width: "28px" }} />
-                                <img src={Plant} style={{ height: "28px", width: "28px" }} />
-                                <img src={Plant} style={{ height: "28px", width: "28px" }} />
-                            </Col>
-                        </Col>
-                    </Col>
-                    <Col md={1} />
-                </Row>
-
-
-
+                <Footer />
             </div>
         );
     }
 }
-// https://techclouderp.com/
-export default App;
+export default ContactUs;
