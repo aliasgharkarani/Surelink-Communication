@@ -105,14 +105,14 @@ class ContactUs extends Component {
                         <Col md={5}>
                             <Row>
                                 <Col md={12} style={{ marginTop: "2%" }}>
-                                    <Col md={3}>
+                                    <Col md={3} xs={4} sm={4}>
                                         <img src={team} alt="team" style={{ background: "#fffff", height: "80px", width: "90px" }} />
                                     </Col>
                                     <Col md={6}>
                                         <Col md={12} style={{ flexDirection: "column" }}>
                                             <p>Name: Pallavi</p>
                                             <p>Phone: +91-8919439603</p>
-                                            <p>Email: pallavi@techclouderp.com</p>
+                                            <p>Email:pallavi@clouderp.com</p>
                                         </Col>
                                     </Col>
                                     <Col md={3} />
@@ -120,14 +120,14 @@ class ContactUs extends Component {
                             </Row>
                             <Row>
                                 <Col md={12} style={{ marginTop: "2%" }}>
-                                    <Col md={3}>
+                                    <Col md={3} xs={4} sm={4}>
                                         <img src={team} alt="team" style={{ background: "#fffff", height: "80px", width: "90px" }} />
                                     </Col>
                                     <Col md={6}>
                                         <Col md={12} style={{ flexDirection: "column" }}>
                                             <p>Name: Pallavi</p>
                                             <p>Phone: +91-8919439603</p>
-                                            <p>Email: pallavi@techclouderp.com</p>
+                                            <p>Email:pallavi@clouderp.com</p>
                                         </Col>
                                     </Col>
                                     <Col md={3} />
@@ -135,14 +135,14 @@ class ContactUs extends Component {
                             </Row>
                             <Row>
                                 <Col md={12} style={{ marginTop: "2%" }}>
-                                    <Col md={3}>
+                                    <Col md={3} xs={4} sm={4}>
                                         <img src={team} alt="team" style={{ background: "#fffff", height: "80px", width: "90px" }} />
                                     </Col>
                                     <Col md={6}>
                                         <Col md={12} style={{ flexDirection: "column" }}>
                                             <p>Name: Pallavi</p>
                                             <p>Phone: +91-8919439603</p>
-                                            <p>Email: pallavi@techclouderp.com</p>
+                                            <p>Email:pallavi@clouderp.com</p>
                                         </Col>
                                     </Col>
                                     <Col md={3} />
@@ -150,14 +150,14 @@ class ContactUs extends Component {
                             </Row>
                             <Row>
                                 <Col md={12} style={{ marginTop: "2%" }}>
-                                    <Col md={3}>
+                                    <Col md={3} xs={4} sm={4}>
                                         <img src={team} alt="team" style={{ background: "#fffff", height: "80px", width: "90px" }} />
                                     </Col>
                                     <Col md={6}>
                                         <Col md={12} style={{ flexDirection: "column" }}>
                                             <p>Name: Pallavi</p>
                                             <p>Phone: +91-8919439603</p>
-                                            <p>Email: pallavi@techclouderp.com</p>
+                                            <p>Email:pallavi@clouderp.com</p>
                                         </Col>
                                     </Col>
                                     <Col md={3} />
