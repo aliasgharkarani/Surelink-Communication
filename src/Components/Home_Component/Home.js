@@ -15,14 +15,30 @@ import Production from '../../assets/production.jpg';
 import Assets from '../../assets/asset-management.jpg';
 import Finance from '../../assets/finance.jpg';
 import HumanResourse from '../../assets/hrms.jpg';
-import { Carousel, Row, Col,Panel } from 'react-bootstrap'
+import { Carousel, Row, Col, Panel } from 'react-bootstrap'
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Header from '../Custom_Components/Header.js'
 import Footer from '../Custom_Components/Footer';
+import './home.css'
 
 class Home extends Component {
-  render() {
+  componentDidMount() {
 
+    window.onscroll = () => { myFunction() };
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+
+  }
+  render() {
     const whySurelink = [
       { pic: SFALL, heading: "Solutions for All", para: "Whether you have 2 or 2000 employees, Tech Cloud ERP has a comprehensive portfolio of leading cloud based ERP software solutions and tools to fit your needs. We also provide dedicated support teams that are at your disposal 24/7" },
       { pic: Flexible, heading: "Flexibility", para: "Whether you have 2 or 2000 employees, Tech Cloud ERP has a comprehensive portfolio of leading cloud based ERP software solutions and tools to fit your needs. We also provide dedicated support teams that are at your disposal 24/7" },
@@ -43,127 +59,128 @@ class Home extends Component {
       { pic: HumanResourse, heading: "Human Resourse", para: "Whether you have 2 or 2000 employees, Tech Cloud ERP has a comprehensive portfolio of leading cloud based ERP software solutions and tools to fit your needs. We also provide dedicated support teams that are at your disposal 24/7" }
     ]
     return (
-      <div style={{ overflow: "hidden" }}>
-        <Header />
-        <Row>
-          <Col md={12} sm={12} xs={12}>
-            <Carousel>
-              <Carousel.Item>
-                <img width={500} height={500} alt="900x500" src={pic} />
-                <Carousel.Caption>
-                  <h3>Package 1</h3>
-                  <p>it contains .................</p>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img width={500} height={500} alt="900x500" src={pic} />
-                <Carousel.Caption>
-                  <h3>Package 2</h3>
-                  <p>it contains .................</p>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img width={500} height={500} alt="900x500" src={pic} />
-                <Carousel.Caption>
-                  <h3>Package 3</h3>
-                  <p>it contains .................</p>
-                </Carousel.Caption>
-              </Carousel.Item>
-            </Carousel>
-          </Col>
-        </Row>
-
-        <Row style={{ marginTop: "3%" }}>
-          <Col md={1} xs={0} sm={0} />
-          <Col md={3} xs={11} sm={11}>
-            <Panel>
-              <Panel.Heading>
-                <Panel.Title componentClass="h3">20 years of Experience</Panel.Title>
-              </Panel.Heading>
-              <Panel.Body>Panel content</Panel.Body>
-            </Panel>
-          </Col>
-          <Col md={4} xs={11} sm={11}>
-            <Panel>
-              <Panel.Heading>
-                <Panel.Title componentClass="h3">200+ Clients</Panel.Title>
-              </Panel.Heading>
-              <Panel.Body>Panel content</Panel.Body>
-            </Panel>
-          </Col>
-          <Col md={3} xs={11} sm={11}>
-            <Panel>
-              <Panel.Heading>
-                <Panel.Title componentClass="h3">1000+ Users</Panel.Title>
-              </Panel.Heading>
-              <Panel.Body>Panel content</Panel.Body>
-            </Panel>
-          </Col>
-        </Row>
-        <div>
-          <Col md={12} style={{ display: "flex", justifyContent: "center" }}><h3 style={{ borderBottom: "3px solid red" }}>Why Surelink?</h3></Col>
-          {whySurelink.map((obj, i) => {
-            return (
-              <Col md={4} style={{ display: "flex", alignItems: 'center', flexDirection: 'column', marginTop: "2%" }}>
-                <img src={obj.pic} height={100} width={100} alt="collection"/>
-                <h4>{obj.heading}</h4>
-                <p style={{ fontSize: '13px', textAlign: 'center' }}>{obj.para}</p>
-              </Col>
-            )
-          })}
-        </div>
-        <div>
+      <div className="parent-home">
+        <Header/>
           <Row>
-            <Col md={1} sm={1} xs={1} />
-            <Col md={5} sm={11} xs={11} style={{ marginTop: "1%" }}>
-              <iframe title="YoutubeIntroLink" style={{ width: "300px", height: "200px" }} src="https://www.youtube.com/embed/xV_Bc5a8u60" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </Col>
-            <Col md={6} sm={11} xs={11} style={{ marginTop: "1%" }}>
-              <div style={{ display: "flex", flexDirection: "column" }}>
-                <h4 style={{ textAlign: 'center', marginTop: '6%', borderBottom: "1px solid red", fontSize: "12px" }}>
-                  We change the way you think about ERP!
-             </h4>
-                <h4 style={{ textAlign: 'center', marginTop: '2%', fontSize: "12px" }}>
-                  See how our Tech Cloud ERP software uses intelligent technologies like digital assistants, AI and machine learning, and predictive analytics – to deliver instant, future proof value.
-            </h4>
-              </div>
+            <Col md={12} sm={12} xs={12}>
+              <Carousel>
+                <Carousel.Item>
+                  <img width={500} height={500} alt="900x500" src={pic} />
+                  <Carousel.Caption>
+                    <h3>Package 1</h3>
+                    <p>it contains .................</p>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img width={500} height={500} alt="900x500" src={pic} />
+                  <Carousel.Caption>
+                    <h3>Package 2</h3>
+                    <p>it contains .................</p>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img width={500} height={500} alt="900x500" src={pic} />
+                  <Carousel.Caption>
+                    <h3>Package 3</h3>
+                    <p>it contains .................</p>
+                  </Carousel.Caption>
+                </Carousel.Item>
+              </Carousel>
             </Col>
           </Row>
-        </div>
-        <div>
-          <Col md={12} style={{ display: "flex", justifyContent: "center" }}><h3 style={{ borderBottom: "3px solid red" }}>Important Modules</h3></Col>
-          {ImportantModules.map((obj, i) => {
-            return (
-              <Col md={4} style={{ display: "flex", alignItems: 'center', flexDirection: 'column', marginTop: "2%" }}>
-                <img src={obj.pic} height={200} width={200} alt="collection"/>
-                <h4>{obj.heading}</h4>
-                <p style={{ fontSize: '13px', textAlign: 'center' }}>{obj.para}</p>
+
+          <Row style={{ marginTop: "3%" }}>
+            <Col md={1} xs={0} sm={0} />
+            <Col md={3} xs={11} sm={11} >
+              <Panel className="panel1">
+                <Panel.Heading>
+                  <Panel.Title componentClass="h3">20 years of Experience</Panel.Title>
+                </Panel.Heading>
+                <Panel.Body>Panel content</Panel.Body>
+              </Panel>
+            </Col>
+            <Col md={4} xs={11} sm={11} >
+              <Panel className="panel2">
+                <Panel.Heading>
+                  <Panel.Title componentClass="h3">200+ Clients</Panel.Title>
+                </Panel.Heading>
+                <Panel.Body>Panel content</Panel.Body>
+              </Panel>
+            </Col>
+            <Col md={3} xs={11} sm={11} >
+              <Panel className="panel3">
+                <Panel.Heading>
+                  <Panel.Title componentClass="h3">1000+ Users</Panel.Title>
+                </Panel.Heading>
+                <Panel.Body>Panel content</Panel.Body>
+              </Panel>
+            </Col>
+          </Row>
+          <div>
+            <Col md={12} className="WhySureLink"><h3>Why Surelink?</h3></Col>
+            {whySurelink.map((obj, i) => {
+              return (
+                <Col md={4} className="whysurelink-values">
+                  <img src={obj.pic} alt="collection" />
+                  <h4>{obj.heading}</h4>
+                  <p>{obj.para}</p>
+                </Col>
+              )
+            })}
+          </div>
+          <div>
+            <Row>
+              <Col md={1} sm={1} xs={1} />
+              <Col md={4} sm={11} xs={11} className="video-link">
+                <iframe title="YoutubeIntroLink" src="https://www.youtube.com/embed/xV_Bc5a8u60" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </Col>
-            )
-          })}
-          <Col md={12} style={{ display: "flex", justifyContent: "center" }}><h3 style={{ borderBottom: "3px solid red" }}>Other Modules</h3></Col>
-          <Col md={12} style={{ display: "flex", justifyContent: "center" }}><h5>Job work, Dynamic Costing,..........................................................................</h5></Col>
+              <Col md={6} sm={11} xs={11} className="change-think-erp">
+                <div>
+                  <h4>
+                    We change the way you think about ERP!
+             </h4>
+                  <p>
+                    See how our Tech Cloud ERP software uses intelligent technologies<br /> like digital assistants, AI and machine learning, and <br />predictive analytics – to deliver instant, future proof value.
+            </p>
+                </div>
+              </Col>
+              <Col md={1} />
+            </Row>
+          </div>
+          <div>
+            <Col md={12} className="important-modules"><h3>Important Modules</h3></Col>
+            {ImportantModules.map((obj, i) => {
+              return (
+                <Col md={4} className="important-modules-details">
+                  <img src={obj.pic} alt="collection" />
+                  <h4>{obj.heading}</h4>
+                  <p>{obj.para}</p>
+                </Col>
+              )
+            })}
+            <Col md={12} className="other-modules"><h3>Other Modules</h3></Col>
+            <Col md={12} className="other-modules-details"><h5>Job work, Dynamic Costing,..........................................................................</h5></Col>
+          </div>
+          <Col md={12} className="sure-link-erp-features-row">
+            <Col md={12} className="sure-link-erp-features"><h3>Surelink Features</h3></Col>
+            <Col md={6} className="sure-link-erp-features-left-right">
+              <h4>Web Based and Cloud Computing</h4>
+              <h4>Dynamic Dash Board with a GUI</h4>
+              <h4>Inbuilt Email & SMS Integration</h4>
+              <h4>Multi Language</h4>
+              <h4>Unlimited Data Storage</h4>
+            </Col>
+            <Col md={6} className="sure-link-erp-features-left-right">
+              <h4>Mobile and Tab Compatibility</h4>
+              <h4>Unlimited Users</h4>
+              <h4>Auto Back-up Facility</h4>
+              <h4>Flexible Software</h4>
+              <h4>Lifetime Product, No Renewals</h4>
+            </Col>
+            <Col md={12} className="other-features-slc"><h4>+Other Awesome Features in Surelink Communication</h4></Col>
+          </Col>
+          <Footer />
         </div>
-        <Col md={12} style={{ background: "#37addb", borderBottom: "3px solid red" }}>
-          <Col md={12} style={{ display: "flex", justifyContent: "center" }}><h3 style={{ borderBottom: "3px solid red", color: "white" }}>Tech Cloud ERP Features</h3></Col>
-          <Col style={{ display: "flex", alignItems: 'center', color: "white", flexDirection: "column" }} md={6}>
-            <h4>Web Based and Cloud Computing</h4>
-            <h4>Dynamic Dash Board with a GUI</h4>
-            <h4>Inbuilt Email & SMS Integration</h4>
-            <h4>Multi Language</h4>
-            <h4>Unlimited Data Storage</h4>
-          </Col>
-          <Col style={{ display: "flex", alignItems: 'center', color: "white", flexDirection: "column" }} md={6}>
-            <h4>Mobile and Tab Compatibility</h4>
-            <h4>Unlimited Users</h4>
-            <h4>Auto Back-up Facility</h4>
-            <h4>Flexible Software</h4>
-            <h4>Lifetime Product, No Renewals</h4>
-          </Col>
-          <Col md={12} style={{ display: "flex", justifyContent: "center" }}><h4 style={{ color: "white" }}>+Other Awesome Features in Tech Cloud ERP</h4></Col>
-        </Col>
-        <Footer/>
-      </div>
     );
   }
 }
