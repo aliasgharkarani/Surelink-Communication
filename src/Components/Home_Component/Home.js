@@ -91,7 +91,7 @@ class Home extends Component {
 
           <Row style={{ marginTop: "3%" }}>
             <Col md={1} xs={0} sm={0} />
-            <Col md={3} xs={11} sm={11} >
+            <Col md={3} xs={12} sm={12} >
               <Panel className="panel1">
                 <Panel.Heading>
                   <Panel.Title componentClass="h3">20 years of Experience</Panel.Title>
@@ -99,7 +99,7 @@ class Home extends Component {
                 <Panel.Body>Panel content</Panel.Body>
               </Panel>
             </Col>
-            <Col md={4} xs={11} sm={11} >
+            <Col md={4} xs={12} sm={12} >
               <Panel className="panel2">
                 <Panel.Heading>
                   <Panel.Title componentClass="h3">200+ Clients</Panel.Title>
@@ -107,7 +107,7 @@ class Home extends Component {
                 <Panel.Body>Panel content</Panel.Body>
               </Panel>
             </Col>
-            <Col md={3} xs={11} sm={11} >
+            <Col md={3} xs={12} sm={12} >
               <Panel className="panel3">
                 <Panel.Heading>
                   <Panel.Title componentClass="h3">1000+ Users</Panel.Title>
@@ -140,7 +140,7 @@ class Home extends Component {
                     We change the way you think about ERP!
              </h4>
                   <p>
-                    See how our Tech Cloud ERP software uses intelligent technologies<br /> like digital assistants, AI and machine learning, and <br />predictive analytics – to deliver instant, future proof value.
+                    See how our Tech Cloud ERP software uses intelligent technologies like digital assistants, AI and machine learning, and predictive analytics – to deliver instant, future proof value.
             </p>
                 </div>
               </Col>
@@ -159,7 +159,7 @@ class Home extends Component {
               )
             })}
             <Col md={12} className="other-modules"><h3>Other Modules</h3></Col>
-            <Col md={12} className="other-modules-details"><h5>Job work, Dynamic Costing,..........................................................................</h5></Col>
+            <Col md={12} className="other-modules-details"><h5>Job work, Dynamic Costing..............</h5></Col>
           </div>
           <Col md={12} className="sure-link-erp-features-row">
             <Col md={12} className="sure-link-erp-features"><h3>Surelink Features</h3></Col>

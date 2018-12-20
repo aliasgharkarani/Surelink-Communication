@@ -17,14 +17,14 @@ class Footer extends Component {
                 </Row>
 
                 <Row>
-                    <Col md={1} />
-                    <Col md={10} style={{ marginTop: "1%", paddingLeft: "0px" }}>
-                        <Col md={12} style={{ paddingLeft: "0px" }}>
-                            <Col md={3} style={{ paddingLeft: "0px" }}>
+                    <Col md={1} xs={0} sm={0}/>
+                    <Col md={10} xs={12} sm={12} style={{ marginTop: "1%", paddingLeft: "0px" }}>
+                        <Col md={12} xs={12} sm={12}>
+                            <Col md={3} style={{ paddingLeft: "0px" }} xs={12} sm={12}>
                                 <img src={logo1} alt="logo" style={{ height: "69px", width: "228px" }} />
                             </Col>
                             <Col style={{ display: "flex", alignItems: 'center', flexDirection: "column", height: "69px", justifyContent: "center" }} md={6}>
-                                <Col style={{ color: "#f69a83", textShadow: "0.2px 0.2px" }}>©2018 Tech Cloud ERP. All Rights Reserved. <span style={{ color: "#1fb1ce", textShadow: "0.5px 0.5px" }}>Privacy Policy</span><br /><span style={{ color: '#ef471d', textShadow: "0.5px 0.5px" }}>Terms & Conditions.</span></Col>
+                                <Col style={{ color: "#f69a83", textShadow: "0.2px 0.2px" }}>©2018 Tech Cloud ERP. All Rights Reserved. <span style={{ color: "#1fb1ce", textShadow: "0.5px 0.5px" }}>Privacy Policy</span><span style={{ color: '#ef471d', textShadow: "0.5px 0.5px" }}>Terms & Conditions.</span></Col>
                             </Col>
                             <Col md={3} style={{ display: "flex", alignItems: 'center', height: "69px", justifyContent: "center" }}>
                                 Get Social
@@ -37,7 +37,7 @@ class Footer extends Component {
                             </Col>
                         </Col>
                     </Col>
-                    <Col md={1} />
+                    <Col md={1} sm={0} xs={0}/>
                 </Row>
             </div>
         );
