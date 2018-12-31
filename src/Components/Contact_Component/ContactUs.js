@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import team from '../../assets/team123.png';
 import pak_flag from '../../assets/pak_flag.png'
-import { Row, Col,FormGroup, FormControl, Button } from 'react-bootstrap'
+import { Row, Col, FormGroup, FormControl, Button } from 'react-bootstrap'
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './ContactUs.css';
 import Header from '../Custom_Components/Header.js'
 import Footer from '../Custom_Components/Footer.js'
-
+import * as firebase from 'firebase'
 class ContactUs extends Component {
     constructor(props, context) {
         super(props, context);
 
         this.handleChange = this.handleChange.bind(this);
+        this.SendMSg = this.SendMSg.bind(this);
 
         this.state = {
             value: '',
@@ -21,19 +22,49 @@ class ContactUs extends Component {
             company: "",
             message: ""
         };
+        var config = {
+            apiKey: "AIzaSyDuWScQ-zV4h9WyHU5YNFKZmIchJte1yqI",
+            authDomain: "surelink-3d455.firebaseapp.com",
+            databaseURL: "https://surelink-3d455.firebaseio.com",
+            projectId: "surelink-3d455",
+            storageBucket: "surelink-3d455.appspot.com",
+            messagingSenderId: "599203778013"
+        };
+        firebase.initializeApp(config);
     }
-
     handleChange(e) {
         this.setState({ [e.target.name]: e.target.value });
     }
-
+    SendMSg() {
+        let name1 = this.state.name;
+        let ph = this.state.phonenumber;
+        let email1 = this.state.email;
+        let company1 = this.state.company;
+        let msg1 = this.state.message;
+        firebase.database().ref(`Messages/${name1}-${ph}`).set(
+            {
+                name: name1,
+                phoneno1: ph,
+                email: email1,
+                company1: company1,
+                msg: msg1
+            })
+            alert("Thanks , Will Respond you Soon");
+        this.setState({
+            name: "",
+            phonenumber: "",
+            email: "",
+            company: "",
+            message: ""
+        })
+    }
     render() {
         return (
             <div style={{ overflowX: "hidden" }}>
                 <Header />
                 <Row>
                     <Col md={2} />
-                    <Col md={8} style={{ textAlign: "center" }}><h3>Interested in Tech Cloud Enterprise Resource Planning  Software System?</h3></Col>
+                    <Col md={8} style={{ textAlign: "center" }}><h3>Interested in Surelink Resource Planning  Software System?</h3></Col>
                     <Col md={2} />
                 </Row>
 
@@ -48,59 +79,59 @@ class ContactUs extends Component {
                     <Col md={12} style={{ flexDirection: "column" }}>
                         <Col md={1} />
                         <Col md={5}>
-                            <form>
-                                <FormGroup
-                                    controlId="formBasicText"
-                                >
-                                    <FormControl
-                                        style={{ width: "80%", marginTop: "3%", height: "45px" }}
-                                        type="text"
-                                        name="name"
-                                        value={this.state.name}
-                                        required
-                                        placeholder="Name"
-                                        onChange={this.handleChange}
-                                    />
-                                    <FormControl
-                                        style={{ width: "80%", marginTop: "3%", height: "45px" }}
-                                        type="text"
-                                        name="phonenumber"
-                                        value={this.state.phonenumber}
-                                        required
-                                        placeholder="phone number"
-                                        onChange={this.handleChange}
-                                    />
-                                    <FormControl
-                                        style={{ width: "80%", marginTop: "3%", height: "45px" }}
-                                        type="text"
-                                        name="email"
-                                        value={this.state.email}
-                                        required
-                                        placeholder="email"
-                                        onChange={this.handleChange}
-                                    />
-                                    <FormControl
-                                        style={{ width: "80%", marginTop: "3%", height: "45px" }}
-                                        type="text"
-                                        name="company"
-                                        value={this.state.company}
-                                        required
-                                        placeholder="company"
-                                        onChange={this.handleChange}
-                                    />
-                                    <FormControl
-                                        componentClass="textarea"
-                                        style={{ width: "80%", marginTop: "3%", height: "100px" }}
-                                        type="text"
-                                        name="message"
-                                        value={this.state.message}
-                                        required
-                                        placeholder="message"
-                                        onChange={this.handleChange}
-                                    />
-                                    <Button type="submit" style={{ marginTop: "3%", width: "130px", height: "40px", color: "#ffff", fontWeight: "bold", background: "#01a2ca" }}>Send Message</Button>
-                                </FormGroup>
-                            </form>
+                            {/* <form onSubmit={this.SendMSg}> */}
+                            <FormGroup
+                                controlId="formBasicText"
+                            >
+                                <FormControl
+                                    style={{ width: "80%", marginTop: "3%", height: "45px" }}
+                                    type="text"
+                                    name="name"
+                                    value={this.state.name}
+                                    required
+                                    placeholder="Name"
+                                    onChange={this.handleChange}
+                                />
+                                <FormControl
+                                    style={{ width: "80%", marginTop: "3%", height: "45px" }}
+                                    type="text"
+                                    name="phonenumber"
+                                    value={this.state.phonenumber}
+                                    required
+                                    placeholder="phone number"
+                                    onChange={this.handleChange}
+                                />
+                                <FormControl
+                                    style={{ width: "80%", marginTop: "3%", height: "45px" }}
+                                    type="text"
+                                    name="email"
+                                    value={this.state.email}
+                                    required
+                                    placeholder="email"
+                                    onChange={this.handleChange}
+                                />
+                                <FormControl
+                                    style={{ width: "80%", marginTop: "3%", height: "45px" }}
+                                    type="text"
+                                    name="company"
+                                    value={this.state.company}
+                                    required
+                                    placeholder="company"
+                                    onChange={this.handleChange}
+                                />
+                                <FormControl
+                                    componentClass="textarea"
+                                    style={{ width: "80%", marginTop: "3%", height: "100px" }}
+                                    type="text"
+                                    name="message"
+                                    value={this.state.message}
+                                    required
+                                    placeholder="message"
+                                    onChange={this.handleChange}
+                                />
+                                <Button onClick={this.SendMSg} style={{ marginTop: "3%", width: "130px", height: "40px", color: "#ffff", fontWeight: "bold", background: "#01a2ca" }}>Send Message</Button>
+                            </FormGroup>
+                            {/* </form> */}
                         </Col>
                         <Col md={5}>
                             <Row>
