@@ -2,21 +2,21 @@
     overflow:hidden;
 }
 .panel1{
-    background: rgb(213, 197, 230);
+    background:#e7d7f7;
 }
 .panel1:hover{
-    background: rgb(47, 255, 245);
+    background:  rgb(192, 177, 247);
     transition:  all 1s;
 }
 .panel2{
-    background: rgb(243, 184, 149);
+    background: #e7d7f7;
 }
 .panel2:hover{
     background: rgb(192, 177, 247);
     transition:  all 1.5s;
 }
 .panel3{
-    background: rgb(228, 151, 198);
+    background:#e7d7f7;
 }
 .panel3:hover{
     background: rgb(126, 178, 236);

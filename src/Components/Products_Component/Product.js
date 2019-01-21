@@ -25,7 +25,7 @@ class Products extends Component {
                     <Col md={11}>
                         <h4 style={{ marginTop: "20px" }}>ALL-IN-ONE CLOUD BASED ERP SOFTWARE FOR MANUFACTURING AND TRADING COMPANIES</h4>
                         <Col style={{ display: "flex", flexDirection: "column" }} md={6}>
-                            <p style={{ textAlign: "justify" }}>Tech Cloud ERP is a web/cloud based ERP software in Hyderabad, India with modern tech-savvy functionalities of Business Process Management, designed specifically to fit all the types of business verticals. Developed in a web based environment, it includes robust functionalities which are considered as a part of the extended high-end enterprise application. Tech Cloud ERP is a perfect fit for any kind of any business process. Even, it offers the finest in technology, design, architecture, functionality, features and the ease of use which propose a great user experience. To get a deeper understanding of how ERP solutions can transform your business, it helps to get a better sense of what ERP actually is and how it works. As we are the best ERP software providers in Hyderabad, India here's a brief introduction to ERP and why it seems like everyone's talking about it. ERP is an acronym for Enterprise Resource Planning, but even its full name doesn't shed much light on what ERP is or what it does. For that, you need to take a step back and think about all of the various processes that are essential to running a business, including sales & marketing, purchase, inventory, production, accounting, human resources and beyond. At its most basic level, ERP software integrates these various functions into one complete system to streamline processes and information across the entire organization.</p>
+                            <p style={{ textAlign: "justify" }}>Surelink Communication is a web/cloud based ERP software in Karachi, Pakistan with modern tech-savvy functionalities of Business Process Management, designed specifically to fit all the types of business verticals. Developed in a web based environment, it includes robust functionalities which are considered as a part of the extended high-end enterprise application. Surelink Communication is a perfect fit for any kind of any business process. Even, it offers the finest in technology, design, architecture, functionality, features and the ease of use which propose a great user experience. To get a deeper understanding of how ERP solutions can transform your business, it helps to get a better sense of what ERP actually is and how it works. As we are the best ERP software providers in Hyderabad, India here's a brief introduction to ERP and why it seems like everyone's talking about it. ERP is an acronym for Enterprise Resource Planning, but even its full name doesn't shed much light on what ERP is or what it does. For that, you need to take a step back and think about all of the various processes that are essential to running a business, including sales & marketing, purchase, inventory, production, accounting, human resources and beyond. At its most basic level, ERP software integrates these various functions into one complete system to streamline processes and information across the entire organization.</p>
                         </Col>
                         <Col style={{ display: "flex", flexDirection: "column" }} md={5}>
                             <img src={erpbanner} alt="collection" style={{height: '320px' }} />
@@ -37,7 +37,7 @@ class Products extends Component {
                     <Col md={12} style={{ marginTop: "2%" }}>
                         <Col md={1} />
                         <Col md={11}>
-                            <h4>The core business activities of Tech Cloud ERP:</h4>
+                            <h4>The core business activities of Surelink Communication:</h4>
                             <Col style={{ display: "flex", flexDirection: "column" }} md={5}>
                                 <ul>
                                     <li>Dynamic Costing Sheets</li>
@@ -73,7 +73,7 @@ class Products extends Component {
                     <Col md={12} style={{ marginTop: "2%" }}>
                         <Col md={1} />
                         <Col md={11}>
-                            <h4 style={{ color: "#ef471d" }}>TECH CLOUD ERP MODULES FOR MANUFACTURING</h4>
+                            <h4 style={{ color: "#ef471d" }}>Surelink Communication MODULES FOR MANUFACTURING</h4>
                             <Col style={{ display: "flex", flexDirection: "column", boxShadow: "5px 5px #888888" }} md={10}>
                                 <ul>
                                     <li>CRM</li>
@@ -271,15 +271,15 @@ class Products extends Component {
                     <Col md={12}>
                         <Col md={1} />
                         <Col style={{ display: "flex", flexDirection: "column" }} md={3}>
-                            <h4 style={{ fontWeight: "bold", marginTop: "20px" }}>Why Tech Cloud ERP?</h4>
-                            <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Unique Tech Cloud ERP</p>
+                            <h4 style={{ fontWeight: "bold", marginTop: "20px" }}>Why Surelink Communication?</h4>
+                            <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Unique Surelink Communication</p>
                             <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Whats Set's us Different?</p>
                             <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Pricing & Plans</p>
                             <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Product Comparison</p>
                         </Col>
                         <Col style={{ display: "flex", flexDirection: "column" }} md={3}>
                             <h4 style={{ fontWeight: "bold", marginTop: "20px" }}>Products</h4>
-                            <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Tech Cloud ERP</p>
+                            <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Surelink Communication</p>
                             <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Tech Cloud CRM</p>
                             <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Tech Cloud POS</p>
                             <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Tech Cloud Trading Software</p>

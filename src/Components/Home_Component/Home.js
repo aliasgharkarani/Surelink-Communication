@@ -60,127 +60,127 @@ class Home extends Component {
     ]
     return (
       <div className="parent-home">
-        <Header/>
-          <Row>
-            <Col md={12} sm={12} xs={12}>
-              <Carousel>
-                <Carousel.Item>
-                  <img width={500} height={500} alt="900x500" src={pic} />
-                  <Carousel.Caption>
-                    <h3>Package 1</h3>
-                    <p>it contains .................</p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img width={500} height={500} alt="900x500" src={pic} />
-                  <Carousel.Caption>
-                    <h3>Package 2</h3>
-                    <p>it contains .................</p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img width={500} height={500} alt="900x500" src={pic} />
-                  <Carousel.Caption>
-                    <h3>Package 3</h3>
-                    <p>it contains .................</p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-              </Carousel>
-            </Col>
-          </Row>
-
-          <Row style={{ marginTop: "3%" }}>
-            <Col md={1} xs={0} sm={0} />
-            <Col md={3} xs={12} sm={12} >
-              <Panel className="panel1">
-                <Panel.Heading>
-                  <Panel.Title componentClass="h3">20 years of Experience</Panel.Title>
-                </Panel.Heading>
-                <Panel.Body>Panel content</Panel.Body>
-              </Panel>
-            </Col>
-            <Col md={4} xs={12} sm={12} >
-              <Panel className="panel2">
-                <Panel.Heading>
-                  <Panel.Title componentClass="h3">200+ Clients</Panel.Title>
-                </Panel.Heading>
-                <Panel.Body>Panel content</Panel.Body>
-              </Panel>
-            </Col>
-            <Col md={3} xs={12} sm={12} >
-              <Panel className="panel3">
-                <Panel.Heading>
-                  <Panel.Title componentClass="h3">1000+ Users</Panel.Title>
-                </Panel.Heading>
-                <Panel.Body>Panel content</Panel.Body>
-              </Panel>
-            </Col>
-          </Row>
-          <div>
-            <Col md={12} className="WhySureLink"><h3>Why Surelink?</h3></Col>
-            {whySurelink.map((obj, i) => {
-              return (
-                <Col md={4} className="whysurelink-values">
-                  <img src={obj.pic} alt="collection" />
-                  <h4>{obj.heading}</h4>
-                  <p>{obj.para}</p>
-                </Col>
-              )
-            })}
-          </div>
-          <div>
-            <Row>
-              <Col md={1} sm={1} xs={1} />
-              <Col md={4} sm={11} xs={11} className="video-link">
-                <iframe title="YoutubeIntroLink" src="https://www.youtube.com/embed/xV_Bc5a8u60" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </Col>
-              <Col md={6} sm={11} xs={11} className="change-think-erp">
-                <div>
-                  <h4>
-                    We change the way you think about ERP!
-             </h4>
-                  <p>
-                    See how our Tech Cloud ERP software uses intelligent technologies like digital assistants, AI and machine learning, and predictive analytics – to deliver instant, future proof value.
-            </p>
-                </div>
-              </Col>
-              <Col md={1} />
-            </Row>
-          </div>
-          <div>
-            <Col md={12} className="important-modules"><h3>Important Modules</h3></Col>
-            {ImportantModules.map((obj, i) => {
-              return (
-                <Col md={4} className="important-modules-details">
-                  <img src={obj.pic} alt="collection" />
-                  <h4>{obj.heading}</h4>
-                  <p>{obj.para}</p>
-                </Col>
-              )
-            })}
-            <Col md={12} className="other-modules"><h3>Other Modules</h3></Col>
-            <Col md={12} className="other-modules-details"><h5>Job work, Dynamic Costing..............</h5></Col>
-          </div>
-          <Col md={12} className="sure-link-erp-features-row">
-            <Col md={12} className="sure-link-erp-features"><h3>Surelink Features</h3></Col>
-            <Col md={6} className="sure-link-erp-features-left-right">
-              <h4>Web Based and Cloud Computing</h4>
-              <h4>Dynamic Dash Board with a GUI</h4>
-              <h4>Inbuilt Email & SMS Integration</h4>
-              <h4>Multi Language</h4>
-              <h4>Unlimited Data Storage</h4>
-            </Col>
-            <Col md={6} className="sure-link-erp-features-left-right">
-              <h4>Mobile and Tab Compatibility</h4>
-              <h4>Unlimited Users</h4>
-              <h4>Auto Back-up Facility</h4>
-              <h4>Flexible Software</h4>
-              <h4>Lifetime Product, No Renewals</h4>
-            </Col>
-            <Col md={12} className="other-features-slc"><h4>+Other Awesome Features in Surelink Communication</h4></Col>
+        <Header />
+        <Row>
+          <Col md={12} sm={12} xs={12}>
+            <Carousel>
+              <Carousel.Item>
+                <img width={500} height={500} alt="900x500" src={pic} />
+                <Carousel.Caption>
+                  <h3>Package 1</h3>
+                  <p>it contains .................</p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img width={500} height={500} alt="900x500" src={pic} />
+                <Carousel.Caption>
+                  <h3>Package 2</h3>
+                  <p>it contains .................</p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img width={500} height={500} alt="900x500" src={pic} />
+                <Carousel.Caption>
+                  <h3>Package 3</h3>
+                  <p>it contains .................</p>
+                </Carousel.Caption>
+              </Carousel.Item>
+            </Carousel>
           </Col>
-          <Footer />
+        </Row>
+
+        <Row style={{ marginTop: "3%" }}>
+          <Col md={1} xs={0} sm={0} />
+          <Col md={3} xs={12} sm={12} >
+            <Panel className="panel1">
+              <Panel.Heading>
+                <Panel.Title componentClass="h3">20 years of Experience</Panel.Title>
+              </Panel.Heading>
+              <Panel.Body style={{ height: 79,color:"white" }}>Highlt experienced Bussiness Analysts to automate your process.</Panel.Body>
+            </Panel>
+          </Col>
+          <Col md={4} xs={12} sm={12} >
+            <Panel className="panel2">
+              <Panel.Heading>
+                <Panel.Title componentClass="h3">200+ Clients</Panel.Title>
+              </Panel.Heading>
+              <Panel.Body style={{ height: 79,color:"white" }}>We make happy Clients</Panel.Body>
+            </Panel>
+          </Col>
+          <Col md={3} xs={12} sm={12} >
+            <Panel className="panel3">
+              <Panel.Heading>
+                <Panel.Title componentClass="h3">1000+ Users</Panel.Title>
+              </Panel.Heading>
+              <Panel.Body style={{ height: 79,color:"white" }}>Infinite users in a common platform(SAAS)</Panel.Body>
+            </Panel>
+          </Col>
+        </Row>
+        <div>
+          <Col md={12} className="WhySureLink"><h3>Why Surelink?</h3></Col>
+          {whySurelink.map((obj, i) => {
+            return (
+              <Col md={4} className="whysurelink-values">
+                <img src={obj.pic} alt="collection" />
+                <h4>{obj.heading}</h4>
+                <p>{obj.para}</p>
+              </Col>
+            )
+          })}
         </div>
+        <div>
+          <Row>
+            <Col md={1} sm={1} xs={1} />
+            <Col md={4} sm={11} xs={11} className="video-link">
+              <iframe title="YoutubeIntroLink" src="https://www.youtube.com/embed/C6FnTtxjqZE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </Col>
+            <Col md={6} sm={11} xs={11} className="change-think-erp">
+              <div>
+                <h4>
+                  We change the way you think about ERP!
+             </h4>
+                <p>
+                  See how our Tech Cloud ERP software uses intelligent technologies like digital assistants, AI and machine learning, and predictive analytics – to deliver instant, future proof value.
+            </p>
+              </div>
+            </Col>
+            <Col md={1} />
+          </Row>
+        </div>
+        <div>
+          <Col md={12} className="important-modules"><h3>Important Modules</h3></Col>
+          {ImportantModules.map((obj, i) => {
+            return (
+              <Col md={4} className="important-modules-details">
+                <img src={obj.pic} alt="collection" />
+                <h4>{obj.heading}</h4>
+                <p>{obj.para}</p>
+              </Col>
+            )
+          })}
+          <Col md={12} className="other-modules"><h3>Other Modules</h3></Col>
+          <Col md={12} className="other-modules-details"><h5>Job work, Dynamic Costing,Tender Management etc</h5></Col>
+        </div>
+        <Col md={12} className="sure-link-erp-features-row">
+          <Col md={12} className="sure-link-erp-features"><h3>Surelink Features</h3></Col>
+          <Col md={6} className="sure-link-erp-features-left-right">
+            <h4>Web Based and Cloud Computing</h4>
+            <h4>Dynamic Dash Board with a GUI</h4>
+            <h4>Inbuilt Email & SMS Integration</h4>
+            <h4>Multi Language</h4>
+            <h4>Unlimited Data Storage</h4>
+          </Col>
+          <Col md={6} className="sure-link-erp-features-left-right">
+            <h4>Mobile and Tab Compatibility</h4>
+            <h4>Unlimited Users</h4>
+            <h4>Auto Back-up Facility</h4>
+            <h4>Flexible Software</h4>
+            <h4>Lifetime Product, No Renewals</h4>
+          </Col>
+          <Col md={12} className="other-features-slc"><h4>+Other Awesome Features in Surelink Communication</h4></Col>
+        </Col>
+        <Footer />
+      </div>
     );
   }
 }

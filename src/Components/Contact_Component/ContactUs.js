@@ -141,9 +141,9 @@ class ContactUs extends Component {
                                     </Col>
                                     <Col md={6}>
                                         <Col md={12} style={{ flexDirection: "column" }}>
-                                            <p>Name: Pallavi</p>
-                                            <p>Phone: +91-8919439603</p>
-                                            <p>Email:pallavi@clouderp.com</p>
+                                            <p>Name: Shams Makkani</p>
+                                            <p>Phone: +93355100234</p>
+                                            <p>Email:shams_makhani@hotmail.com</p>
                                         </Col>
                                     </Col>
                                     <Col md={3} />
@@ -156,9 +156,9 @@ class ContactUs extends Component {
                                     </Col>
                                     <Col md={6}>
                                         <Col md={12} style={{ flexDirection: "column" }}>
-                                            <p>Name: Pallavi</p>
-                                            <p>Phone: +91-8919439603</p>
-                                            <p>Email:pallavi@clouderp.com</p>
+                                            <p>Name: Syed Salman Rizvi</p>
+                                            <p>Phone:+923323235016</p>
+                                            <p>Email:training@surelinkpk.com</p>
                                         </Col>
                                     </Col>
                                     <Col md={3} />
@@ -171,9 +171,9 @@ class ContactUs extends Component {
                                     </Col>
                                     <Col md={6}>
                                         <Col md={12} style={{ flexDirection: "column" }}>
-                                            <p>Name: Pallavi</p>
-                                            <p>Phone: +91-8919439603</p>
-                                            <p>Email:pallavi@clouderp.com</p>
+                                            <p>Name: M.Wasim</p>
+                                            <p>Phone: +923130127352 </p>
+                                            <p>Email:training@surelinkpk.com</p>
                                         </Col>
                                     </Col>
                                     <Col md={3} />
@@ -186,9 +186,9 @@ class ContactUs extends Component {
                                     </Col>
                                     <Col md={6}>
                                         <Col md={12} style={{ flexDirection: "column" }}>
-                                            <p>Name: Pallavi</p>
-                                            <p>Phone: +91-8919439603</p>
-                                            <p>Email:pallavi@clouderp.com</p>
+                                            <p>Name: Ali Karani</p>
+                                            <p>Phone: +923042054458</p>
+                                            <p>Email:aliasgharkarani125@hotmail.com</p>
                                         </Col>
                                     </Col>
                                     <Col md={3} />
@@ -198,7 +198,6 @@ class ContactUs extends Component {
                         <Col md={1} />
                     </Col>
                 </Row>
-
 
                 <Row>
                     <Col md={1} />
@@ -234,23 +233,23 @@ class ContactUs extends Component {
                     <Col md={12}>
                         <Col md={1} />
                         <Col style={{ display: "flex", flexDirection: "column" }} md={3}>
-                            <h4 style={{ fontWeight: "bold", marginTop: "20px" }}>Why Tech Cloud ERP?</h4>
-                            <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Unique Tech Cloud ERP</p>
+                            <h4 style={{ fontWeight: "bold", marginTop: "20px" }}>Why Surelink Communication?</h4>
+                            <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Unique Surelink Communication</p>
                             <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Whats Set's us Different?</p>
                             <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Pricing & Plans</p>
                             <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Product Comparison</p>
                         </Col>
                         <Col style={{ display: "flex", flexDirection: "column" }} md={3}>
                             <h4 style={{ fontWeight: "bold", marginTop: "20px" }}>Products</h4>
-                            <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Tech Cloud ERP</p>
-                            <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Tech Cloud CRM</p>
-                            <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Tech Cloud POS</p>
-                            <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Tech Cloud Trading Software</p>
-                            <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Tech Cloud eCommerce</p>
-                            <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Tech Cloud HRMS</p>
-                            <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Tech Cloud Finance</p>
-                            <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Tech Cloud CRM-eCommerce-POS</p>
-                            <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Tech Cloud Restaurant ERPF</p>
+                            <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Surelink Communication</p>
+                            <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Surelink CRM</p>
+                            <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Surelink POS</p>
+                            <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Surelink Trading Software</p>
+                            <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Surelink eCommerce</p>
+                            <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Surelink HRMS</p>
+                            <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Surelink Finance</p>
+                            <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Surelink CRM-eCommerce-POS</p>
+                            <p style={{ margin: '0px', textShadow: '0.2px 0.2px' }}>Surelink Restaurant ERPF</p>
                         </Col>
                         <Col style={{ display: "flex", flexDirection: "column" }} md={3}>
                             <h4 style={{ fontWeight: "bold", marginTop: "20px" }}>Services</h4>

@@ -11,7 +11,7 @@ class Footer extends Component {
                     <Col md={1} />
                     <Col md={10} style={{ background: "#37addb", borderBottom: "5px solid black", marginTop: "1%", height: '145px' }}>
                         <Col md={12} style={{ display: "flex", justifyContent: "center" }}><h3 style={{ color: "white" }}>Call us now</h3></Col>
-                        <Col md={12} style={{ display: "flex", justifyContent: "center" }}><h3 style={{ color: "white" }}>+91-891-943-9603</h3></Col>
+                        <Col md={12} style={{ display: "flex", justifyContent: "center" }}><h3 style={{ color: "white" }}>+923130127352</h3></Col>
                     </Col>
                     <Col md={1} />
                 </Row>
@@ -24,7 +24,7 @@ class Footer extends Component {
                                 <img src={logo1} alt="logo" style={{ height: "69px", width: "228px" }} />
                             </Col>
                             <Col style={{ display: "flex", alignItems: 'center', flexDirection: "column", height: "69px", justifyContent: "center" }} md={6}>
-                                <Col style={{ color: "#f69a83", textShadow: "0.2px 0.2px" }}>©2018 Tech Cloud ERP. All Rights Reserved. <span style={{ color: "#1fb1ce", textShadow: "0.5px 0.5px" }}>Privacy Policy</span><span style={{ color: '#ef471d', textShadow: "0.5px 0.5px" }}>Terms & Conditions.</span></Col>
+                                <Col style={{ color: "#f69a83", textShadow: "0.2px 0.2px" }}>©2019 Surelink Communication. All Rights Reserved. <span style={{ color: "#1fb1ce", textShadow: "0.5px 0.5px" }}>Privacy Policy</span><span style={{ color: '#ef471d', textShadow: "0.5px 0.5px" }}>Terms & Conditions.</span></Col>
                             </Col>
                             <Col md={3} style={{ display: "flex", alignItems: 'center', height: "69px", justifyContent: "center" }}>
                                 Get Social
